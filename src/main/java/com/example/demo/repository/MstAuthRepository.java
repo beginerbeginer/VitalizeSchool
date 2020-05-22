@@ -1,4 +1,4 @@
-package com.example.demo.repositories;
+package com.example.demo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -11,11 +11,4 @@ import com.example.demo.entity.MstAuth;
  */
 
 @Repository
-public class MstAuthRepository {
-    public String findAll(){
-        String Text = "テスト";
-        return Text ;
-    }
-
-}
-//public interface MstAuthRepository extends JpaRepository<MstAuth, Long> {}
+public interface MstAuthRepository extends JpaRepository<MstAuth, Long> {}
